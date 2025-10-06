@@ -1,0 +1,14 @@
+(* ======================================== *)
+(* EXTERNAL FUNCTION: READ_VAR *)
+(* VERSION: 1.02 *)
+(* Reads the standard objects *)
+(* ======================================== *)
+
+(* INPUT PARAMETERS *)
+  ADR : ANY_ARRAY_INT; (* Address buffer given by ADDR/ADDM *)
+  OBJ : STRING; (* Object to read:'%MW','%M', etc *)
+  NUM : DINT; (* Address of the first object to read *)
+  NB : INT; (* Number of consecutive objects to read *)
+
+(* OUTPUT PARAMETERS *)
+  RECP : ANY_ARRAY_INT; (* Reception buffer *)

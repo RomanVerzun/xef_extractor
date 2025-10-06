@@ -1,0 +1,16 @@
+(* ======================================== *)
+(* DATA TYPE: Error_t *)
+(* VERSION: 0.06 *)
+(* Error structure *)
+(* ======================================== *)
+
+TYPE Error_t :
+STRUCT
+  Err_Timeout : INT; (* Timeout ERROR *)
+  Err_EndSwitchConflict : INT; (* Two limit switch is active *)
+  Err_MotorDirectionErr : INT; (* Motor direction in both sides *)
+  Err_EmergencyStop : INT; (* Emergency stop (UNUSED) *)
+  Err_BeltDrift : INT; (* Drifting belt err *)
+  NO_Err : INT; (* No Error (Other naming for better understanding) *)
+END_STRUCT;
+END_TYPE

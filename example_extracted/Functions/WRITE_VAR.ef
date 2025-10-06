@@ -1,0 +1,12 @@
+(* ======================================== *)
+(* EXTERNAL FUNCTION: WRITE_VAR *)
+(* VERSION: 1.03 *)
+(* Writes the standard objects *)
+(* ======================================== *)
+
+(* INPUT PARAMETERS *)
+  ADR : ANY_ARRAY_INT; (* Address buffer given by ADDR/ADDM *)
+  OBJ : STRING; (* Object to write: '%MW', '%M', etc. *)
+  NUM : DINT; (* Address of the first object to write *)
+  NB : INT; (* Number of consecutive objects to write *)
+  EMIS : ANY_ARRAY_INT; (* Transmission buffer *)

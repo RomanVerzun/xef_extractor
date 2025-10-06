@@ -1,0 +1,13 @@
+(* ======================================== *)
+(* DATA TYPE: LOG *)
+(* VERSION: 0.04 *)
+(* Log structure *)
+(* ======================================== *)
+
+TYPE LOG :
+STRUCT
+  Messages : ARRAY[0..100] OF LOG_Buff; (* Array of messages *)
+  LogIndex : INT; (* Index of current log *)
+  LogCount : INT; (* Log count *)
+END_STRUCT;
+END_TYPE

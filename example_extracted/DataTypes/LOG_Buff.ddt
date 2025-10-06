@@ -1,0 +1,12 @@
+(* ======================================== *)
+(* DATA TYPE: LOG_Buff *)
+(* VERSION: 0.04 *)
+(* Log element *)
+(* ======================================== *)
+
+TYPE LOG_Buff :
+STRUCT
+  LogNum : INT; (* Index of log *)
+  Message : STRING; (* String message *)
+END_STRUCT;
+END_TYPE

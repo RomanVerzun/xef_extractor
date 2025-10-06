@@ -1,0 +1,11 @@
+(* ======================================== *)
+(* EXTERNAL FUNCTION: ADDM *)
+(* VERSION: 1.04 *)
+(* Reads topologic address *)
+(* ======================================== *)
+
+(* INPUT PARAMETERS *)
+  IN : STRING; (* String containing the topologic address *)
+
+(* OUTPUT PARAMETERS *)
+  OUT : ADDM_TYPE; (* This is the output pin *)

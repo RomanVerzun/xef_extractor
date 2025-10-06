@@ -1,0 +1,25 @@
+(* ======================================== *)
+(* DATA TYPE: Transp *)
+(* VERSION: 0.09 *)
+(* Transp structure *)
+(* ======================================== *)
+
+TYPE Transp :
+STRUCT
+  DI_Start : BOOL; (* Start button *)
+  DI_Stop : BOOL; (* Stop button *)
+  DI_BeltDrift : ARRAY[0..3] OF Transp_DriftBelt; (* Belt drift switchers *)
+  DI_Rem_Start : BOOL; (* Remote start button *)
+  DI_Rem_Stop : BOOL; (* Remote stop button *)
+  DI_Reset_Alarm : BOOL;
+  RKS : REAL; (* Speed Control Relay *)
+  SPEED : REAL; (* Current Speed *)
+  DO_Stop : BOOL; (* Stop motor *)
+  DO_Start : BOOL; (* Start motor *)
+  DO_Alarm : BOOL; (* Is some alarm (Legacy, can just use ERRNO) *)
+  Errno : INT; (* Number of error *)
+  MotorEnable : BOOL; (* Is motor enable *)
+  Drift_Q : BOOL; (* TIN Q *)
+  Drift_ElapsedTime : TIME; (* Elapsed drift time for TON *)
+END_STRUCT;
+END_TYPE

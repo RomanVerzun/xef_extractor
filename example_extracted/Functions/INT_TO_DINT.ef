@@ -1,0 +1,11 @@
+(* ======================================== *)
+(* EXTERNAL FUNCTION: INT_TO_DINT *)
+(* VERSION: 1.00 *)
+(* Type conversion *)
+(* ======================================== *)
+
+(* INPUT PARAMETERS *)
+  IN : INT; (* Input value *)
+
+(* OUTPUT PARAMETERS *)
+  OUT : DINT; (* Output value *)

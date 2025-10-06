@@ -1,0 +1,11 @@
+(* ======================================== *)
+(* EXTERNAL FUNCTION: DINT_TO_STRING *)
+(* VERSION: 1.01 *)
+(* Convert a double length integer into a string *)
+(* ======================================== *)
+
+(* INPUT PARAMETERS *)
+  IN : DINT; (* double length integer to be converted *)
+
+(* OUTPUT PARAMETERS *)
+  OUT : STRING; (* 11 char. string representing the integer *)
