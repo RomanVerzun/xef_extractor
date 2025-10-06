@@ -1,0 +1,16 @@
+# XEF файли (опціонально)
+# *.xef
+# *.zef
+
+# Тимчасові файли
+*.pyc
+__pycache__/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
