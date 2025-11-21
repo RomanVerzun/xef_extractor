@@ -21,9 +21,7 @@ python3 xef_extractor.py "project.xef"
 # Всі XEF у папці
 ./batch_extract.sh
 
-# Порівняти версії
-./compare_versions.sh old_extracted new_extracted
-```
+
 
 ### Результат
 
@@ -38,18 +36,8 @@ project_extracted/
 
 ## Git інтеграція
 
-### Варіант 1: Автоматично (hook)
 
-```bash
-cp git-pre-commit-hook-example .git/hooks/pre-commit
-chmod +x .git/hooks/pre-commit
-
-# Тепер при commit автоматично витягується код
-git add project.xef
-git commit -m "зміни"
-```
-
-### Варіант 2: Вручну
+### Вручну
 
 ```bash
 python3 xef_extractor.py "project.xef"
@@ -79,29 +67,6 @@ git add project_extracted/
 | Змінні | Графіка HMI |
 | Коментарі | |
 
-## Приклад
-
-### До екстрактора
-```bash
-$ git diff project.xef
-# 2000+ рядків (timestamps, GUID, checksums...)
-```
-
-### Після екстрактора
-```bash
-$ git diff project_extracted/
-# Тільки реальні зміни коду
-```
-
-```diff
---- a/FunctionBlocks/Valve_Process.st
-+++ b/FunctionBlocks/Valve_Process.st
-@@ -23,6 +23,7 @@
-+(* Reset error *)
- IF Valve[i].DI_Rem_Stop THEN
-   Stop_Valve(Iterator := i);
- END_IF;
-```
 
 ## Вимоги
 
